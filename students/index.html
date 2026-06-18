@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Management System</h1>
+
+    <div class="form-container">
+        <h2>Add Student</h2>
+
+        <form action="add.php" method="POST">
+
+            <input type="text" name="name" placeholder="Student Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="text" name="course" placeholder="Course" required>
+
+            <input type="text" name="phone" placeholder="Phone Number" required>
+
+            <button type="submit">Add Student</button>
+
+        </form>
+    </div>
+
+    <div class="table-container">
+
+        <h2>Student Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- PHP Loop Goes Here -->
+
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@gmail.com</td>
+                    <td>BIT</td>
+                    <td>0712345678</td>
+                    <td>
+                        <a href="#" class="edit-btn">Edit</a>
+                        <a href="#" class="delete-btn">Delete</a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
